@@ -1,5 +1,6 @@
 # My Own SandBox
 My own sandbox for solving some problems on C
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/s-akhmedoff/mysandbox)
 
 | Syntax | Description |
 | ----------- | ----------- |
