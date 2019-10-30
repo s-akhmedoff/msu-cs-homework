@@ -3,4 +3,4 @@ project(mysandbox C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(mysandbox main.c)
+add_executable(mysandbox main.c worker.c worker.h Controller.c Controller.h)
