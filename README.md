@@ -7,7 +7,9 @@ My own sandbox for solving some problems on C
 | Paragraph | Text |
 
 ## Some Tips To Navigate
-// TODO
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
 
 ## One More Section
 // TODO
