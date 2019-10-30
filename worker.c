@@ -9,7 +9,7 @@ char *getName(Worker *w)
 }
 int getExperience(Worker *w)
 {
-    return w->experience
+    return w->experience;
 }
 int getWag(Worker *w)
 {
