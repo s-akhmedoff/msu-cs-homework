@@ -1,7 +1,7 @@
 # My Own SandBox
 My own sandbox for solving some problems on C
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/s-akhmedoff/mysandbox)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/s-akhmedoff/mysandbox) ![GitHub commit merge status](https://img.shields.io/github/commit-status/s-akhmedoff/mysandbox/master/31804a91c18313478171eb2fd012a03bfc14a0ee)
 
 | Syntax | Description |
 | ----------- | ----------- |
