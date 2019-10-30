@@ -1,9 +1,10 @@
 # My Own SandBox
 My own sandbox for solving some problems on C
 
-* C11 
-* x86_64
-* AMD
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
 
 ## Some Tips To Navigate
 // TODO
