@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-CC=clang-7
+CC=clang-8
 MARCH=bdver1
 CFLAGS=-std=c11 -ggdb -masm=intel -Wformat -Wimplicit -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Werror -Winit-self -Wunreachable-code -O3 -march=$(MARCH) -fverbose-asm
 AFLAGS=--enable=all --language=c --platform=unix64 --std=c11 --inconclusive -f -v --suppress=missingIncludeSystem
