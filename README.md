@@ -16,10 +16,8 @@ There are some tasks I solve, but, to be honest, I solve and learn new things li
 - [x] Fill it up
 - [x] Add Travis CI
 - [x] Sync repo with laptop
-<<<<<<< HEAD
-- [ ] Check for full working
+- [x] Check for full working
 =======
->>>>>>> fe012e9d3829284ba2044139244d50bdce129c4a
 
 ## Simple code I just learned recently
 ```c
