@@ -2,6 +2,13 @@
 
 int main(void) 
 {
+    task1();
+
+    task2();
+
+    task3();
+
+    task4();
 
     task7();
     
