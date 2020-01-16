@@ -42,7 +42,7 @@ void primeRow(int16_t** arr, int16_t k, int16_t l)
 		for(register int16_t j = 0; j < l; j++)
 		{
 			if(arr[i][j] % 2 == 0) prime_c++;
-			else if (arr[i][j] % 2 == 1) nonprime_c++;
+			else nonprime_c++;
 		}
 	}
 
