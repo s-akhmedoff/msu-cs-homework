@@ -1,4 +1,3 @@
 language: c
-install: clang-8
 compiler: clang
-script: make build
+script: make travis
