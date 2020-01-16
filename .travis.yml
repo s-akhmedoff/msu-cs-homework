@@ -1,7 +1,3 @@
 language: c
 compiler: clang
 script: make
-packages:
-  - clang-8
-  - libc++-8-dev
-  - libc++abi-8-dev
