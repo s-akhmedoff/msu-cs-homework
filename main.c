@@ -2,8 +2,8 @@
 
 int main(void) 
 {
-	
-	controller();
+
+	controller(); // To make easier
 
     return 0;
 }
