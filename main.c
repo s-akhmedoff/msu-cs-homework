@@ -3,7 +3,7 @@
 int main(void) 
 {
 
-	controller(); // To make easier
+	controller(); 
 
     return 0;
 }
