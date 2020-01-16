@@ -15,7 +15,8 @@ There are some tasks I solve, but, to be honest, I solve and learn new things li
 - [x] Create repo
 - [x] Fill it up
 - [x] Add Travis CI
-- [ ] Sync repo with laptop
+- [x] Sync repo with laptop
+- [ ] Check for full working
 
 ## Simple code I just learned recently
 ```c
