@@ -20,6 +20,9 @@ build: $(SRC) $(INCLUDE)
 	@$(CC) -o $(EXEC) $(CFLAGS) $(SRC) $(ADD)  -Iinclude/
 	@echo Building is Done "¯\_(ツ)_/¯"
 
+travis: $(SRC)
+	clang-7 -o $(EXEC) $(CFLAGS) $(SRC) $(ADD) -Iinclude/
+
 assembly: $(SRC) $(INCLUDE)
 	@echo Assembling $(SRC) with Intel Syntax and $(CC)
 	@$(CC) -S $(CFLAGS) $(SRC) $(ADD) -Iinclude
