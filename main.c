@@ -2,21 +2,8 @@
 
 int main(void) 
 {
-    task1();
+	
+	controller();
 
-    task2();
-
-    task3();
-
-    task4();
-
-    task7();
-    
-    task8();
-
-    task9();
-
-    task10();
-    
     return 0;
 }

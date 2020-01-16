@@ -34,7 +34,7 @@ void task3(void)
 int16_t power(int16_t a, int16_t b)
 {
     int16_t res = 1;
-    while(a-- != 0) res *= b;
+    while(b-- != 0) res *= a;
     return res;
 }
 

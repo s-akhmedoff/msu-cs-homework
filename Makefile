@@ -13,7 +13,7 @@ AFLAGS=--enable=all --language=c --std=c11 --inconclusive -f -v --suppress=missi
 SRC=main.c
 EXEC=main
 
-ADD := $(shell echo include/src/*.c)
+ADD := include/controller.c $(shell echo include/src/*.c)
 DBG=gdb
 ANLZ=cppcheck
 MEMCHCK=valgrind --leak-check=full --show-leak-kinds=all --tool=memcheck
@@ -24,7 +24,7 @@ all: build assembly
 
 build: $(SRC) $(INCLUDE)
 	@echo Building $(SRC) with $(CC)
-	@$(CC) -o $(EXEC) $(CFLAGS)$(MARCH) $(SRC) $(ADD)  -Iinclude/
+	@$(CC) -o $(EXEC) $(CFLAGS)$(MARCH) $(SRC) $(ADD) -Iinclude/
 	@echo Building is Done "¯\_(ツ)_/¯"
 
 build_32:
