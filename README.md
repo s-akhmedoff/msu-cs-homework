@@ -1,6 +1,8 @@
 # My Own SandBox
-My own sandbox for solving some problems on C
 [![Build Status](https://travis-ci.com/s-akhmedoff/msu-cs-homework.svg?branch=master)](https://travis-ci.com/s-akhmedoff/msu-cs-homework)
+
+My own sandbox for solving some problems on C
+
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/s-akhmedoff/msu-cs-homework?style=for-the-badge)
 
 | Syntax | Description |
