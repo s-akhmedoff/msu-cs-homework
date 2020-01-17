@@ -4,6 +4,7 @@
 #include "src/task2.h"
 #include "src/task3.h"
 #include "src/task4.h"
+#include "src/task6.h"
 #include "src/task7.h"
 #include "src/task8.h"
 #include "src/task9.h"
@@ -24,6 +25,7 @@ void controller(void)
 			case 2: task2(); break;
 			case 3: task3(); break;
 			case 4: task4(); break;
+			case 6: task6(); break;
 			case 7: task7(); break;
 			case 8: task8(); break;
 			case 9: task9(); break;
