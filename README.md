@@ -17,17 +17,17 @@ There are some tasks I solve, but, to be honest, I solve and learn new things li
 - [x] Add Travis CI
 - [x] Sync repo with laptop
 - [x] Check for full working
-=======
+- [ ] ...
 
 ## Simple code I just learned recently
 ```c
 int main()
 {
-  int i = 0; // Some counter
-  while (i++ != 10)
-  {
-    // do some code
-  }
+	char a = 'a'
+	while (a++ != 'z')
+	{
+		if (some_char == a) //do smth.
+	}
 
   return 0;
 }
