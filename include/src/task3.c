@@ -3,16 +3,16 @@
 #include "head.h"
 #include "task3.h"
 
-int16_t power(int16_t a, int16_t b);
-void showPoly(int16_t *arr, int16_t k);
-int16_t solvePoly(int16_t *arr, int16_t k, int16_t arg_x);
+static int16_t power(int16_t a, int16_t b);
+static void showPoly(int16_t *arr, int16_t k);
+static int16_t solvePoly(int16_t *arr, int16_t k, int16_t arg_x);
 
 void task3(void)
 {
 
     puts("\nNow executing task 3 - Poly Solver");
 
-    int16_t arg_x = 0;
+    static int16_t arg_x = 0;
 
     n = checkNumber(n = 0);
 
@@ -31,14 +31,14 @@ void task3(void)
     n = 0;
 }
 
-int16_t power(int16_t a, int16_t b)
+static int16_t power(int16_t a, int16_t b)
 {
-    int16_t res = 1;
+    static int16_t res = 1;
     while(b-- != 0) res *= a;
     return res;
 }
 
-void showPoly(int16_t *arr, int16_t k)
+static void showPoly(int16_t *arr, int16_t k)
 {
     
     register int16_t i = k;
@@ -52,7 +52,7 @@ void showPoly(int16_t *arr, int16_t k)
     printf("%hi*x + %hi\n", *(arr + 1), *(arr + 0));
 }
 
-int16_t solvePoly(int16_t *arr, int16_t k, int16_t arg_x)
+static int16_t solvePoly(int16_t *arr, int16_t k, int16_t arg_x)
 {
 
     int16_t polyResult = *(arr+0); // Just store first value of array

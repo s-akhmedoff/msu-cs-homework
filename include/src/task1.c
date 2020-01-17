@@ -3,7 +3,7 @@
 #include "task1.h"
 #include "head.h"
 
-int16_t countPrime(int16_t* arr, int16_t k);
+static int16_t countPrime(int16_t* arr, int16_t k);
 
 void task1(void)
 {
@@ -31,10 +31,10 @@ void task1(void)
 
 }
 
-int16_t countPrime(int16_t *arr, int16_t k)
+static int16_t countPrime(int16_t *arr, int16_t k)
 {
 
-    int16_t result = 0;
+    static int16_t result = 0;
 
     for (register int16_t i = 0; i < k; ++i)
         if ( (*(arr + i) & 1) != 0) ; // Logical method

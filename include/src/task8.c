@@ -3,7 +3,7 @@
 #include "head.h"
 #include "task8.h"
 
-void maxColumn(int16_t** arr, int16_t k, int16_t l);
+static void maxColumn(int16_t** arr, int16_t k, int16_t l);
 
 void task8(void)
 {
@@ -33,7 +33,7 @@ void task8(void)
 	x = 0; y = 0;
 }
 
-void maxColumn(int16_t** arr, int16_t k, int16_t l)
+static void maxColumn(int16_t** arr, int16_t k, int16_t l)
 {
 	int16_t max_in_column = arr[0][0];
 

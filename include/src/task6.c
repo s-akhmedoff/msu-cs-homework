@@ -3,15 +3,15 @@
 #include "head.h"
 #include "task6.h"
 
-int16_t isUpperCase(char c);
-int16_t isLowerCase(char c);
+static int16_t isUpperCase(char c);
+static int16_t isLowerCase(char c);
 
 void task6(void)
 {
 
 	puts("Now executing task 6 - What's more uppercase symbols or lowercase");
 
-	int upper = 0, lower = 0;
+	static int upper = 0, lower = 0;
 	char ch = 0;
 
 	while(ch != '.')
@@ -26,7 +26,7 @@ void task6(void)
 
 }
 
-int16_t isUpperCase(char c)
+static int16_t isUpperCase(char c)
 {
 	char a = 'A';
 	while (a++ != 'Z')
@@ -37,7 +37,7 @@ int16_t isUpperCase(char c)
 	return 0;
 }
 
-int16_t isLowerCase(char c)
+static int16_t isLowerCase(char c)
 {
 	char a = 'a';
 	while (a++ != 'z')

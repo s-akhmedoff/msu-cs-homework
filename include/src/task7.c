@@ -3,8 +3,8 @@
 #include "head.h"
 #include "task7.h"
 
-void max(int16_t** arr, int16_t k, int16_t l);
-void min(int16_t** arr, int16_t k, int16_t l);
+static void max(int16_t** arr, int16_t k, int16_t l);
+static void min(int16_t** arr, int16_t k, int16_t l);
 
 void task7(void)
 {
@@ -35,7 +35,7 @@ void task7(void)
 	x = 0; y = 0;
 }
 
-void max(int16_t** arr, int16_t k, int16_t l)
+static void max(int16_t** arr, int16_t k, int16_t l)
 {
 	int16_t max = arr[0][0];
 
@@ -50,7 +50,7 @@ void max(int16_t** arr, int16_t k, int16_t l)
 	printf("Max in 2-Dim array is: %d\n", max);
 }
 
-void min(int16_t** arr, int16_t k, int16_t l)
+static void min(int16_t** arr, int16_t k, int16_t l)
 {
 	int16_t min = arr[0][0];
 

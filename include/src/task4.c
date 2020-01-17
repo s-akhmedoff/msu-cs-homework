@@ -1,38 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "head.h"
 #include "task4.h"
 
-int countDigits(char *arr, int k);
+static int16_t countDigits(char *charr, int k);
 
 void task4(void)
 {
 
 	puts("Now executing task 4 - Count numbers in 7th number system in char array");
 
-	int n = 0;
+	static int n = 0;
 	puts("Length of array:");
 	scanf("%d", &n);
-	char array[n];
+	char chars[n];
 
-	for(register int i = 0; i < n; ++i)
+	for(register int16_t i = 0; i < n; ++i)
 	{
-		if (array[i] != '\n' && array[i] != '.') scanf("%c", array+i);
+		if (chars[i] != '\n' && chars[i] != '.') scanf("%c", chars+i);
 		else i--;
 	}
 
-	printf("Counted %d digits\n", countDigits(array, n));
+	printf("Counted %d digits\n", countDigits(chars, n));
 
 	n = 0;
 
 }
 
-int countDigits(char *arr, int k)
+static int16_t countDigits(char *charr, int k)
 {
-	int result = 0;
+	static int16_t result = 0;
 
-	for(register int i = 0; i < k; ++i)
+	for(register int16_t i = 0; i < k; ++i)
 	{
-		if ( *(arr+i) == '1' || *(arr+i) == '2' || *(arr+i) == '3' || *(arr+i) == '4' || *(arr+i) == '5' || *(arr+i) == '6') result++;
+		if ( *(charr+i) == '1' || *(charr+i) == '2' || *(charr+i) == '3' || *(charr+i) == '4' || *(charr+i) == '5' || *(charr+i) == '6') result++;
 		else ;
 	}
 

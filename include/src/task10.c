@@ -3,7 +3,7 @@
 #include "head.h"
 #include "task10.h"
 
-void sum(int16_t** arr, int16_t k, int16_t l);
+static void sum(int16_t** arr, int16_t k, int16_t l);
 
 void task10(void)
 {
@@ -34,9 +34,9 @@ void task10(void)
 	x = 0; y = 0;
 }
 
-void sum(int16_t** arr, int16_t k, int16_t l)
+static void sum(int16_t** arr, int16_t k, int16_t l)
 {
-	int16_t pos = 0; int16_t neg = 0;
+	static int16_t pos = 0; int16_t neg = 0;
 	for(register int16_t i = 0; i < k; i++)
 	{
 		for(register int16_t j = 0; j < l; j++)

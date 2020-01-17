@@ -3,7 +3,7 @@
 #include "head.h"
 #include "task9.h"
 
-void primeRow(int16_t** arr, int16_t k, int16_t l);
+static void primeRow(int16_t** arr, int16_t k, int16_t l);
 
 void task9(void)
 {
@@ -33,7 +33,7 @@ void task9(void)
 	x = 0; y = 0;
 }
 
-void primeRow(int16_t** arr, int16_t k, int16_t l)
+static void primeRow(int16_t** arr, int16_t k, int16_t l)
 {
 	int16_t prime_c = 0, nonprime_c = 0;
 
