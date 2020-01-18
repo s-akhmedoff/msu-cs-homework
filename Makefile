@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-CC=clang-8
+CC=clang-9
 CC32=clang-6.0
 CC_TRAVIS=clang-7
 
