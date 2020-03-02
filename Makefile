@@ -1,13 +1,9 @@
 .PHONY: all clean
 
 CC=clang-9
-CC32=clang-6.0
 CC_TRAVIS=clang-7
 
-MARCH=bdver1
-MARCH32=native
-
-CFLAGS=-std=c11 -ggdb -masm=intel -Wformat -Wimplicit -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Werror -Winit-self -Wunreachable-code -O3 -fverbose-asm -march=
+CFLAGS=-std=c11 -ggdb -masm=intel -Wformat -Wimplicit -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Werror -Winit-self -Wunreachable-code -O3 -fverbose-asm 
 AFLAGS=--enable=all --language=c --std=c11 --inconclusive -f -v --suppress=missingIncludeSystem --platform=unix
 
 SRC=main.c
@@ -27,28 +23,14 @@ build: $(SRC) $(INCLUDE)
 	@$(CC) -o $(EXEC) $(CFLAGS)$(MARCH) $(SRC) $(ADD) -Iinclude/
 	@echo Building is Done "¯\_(ツ)_/¯"
 
-build_32:
-	@echo Building $(SRC) with $(CC32)
-	@$(CC32) -o $(EXEC) $(CFLAGS)$(MARCH32) $(SRC) $(ADD) -Iinclude/
-	@echo Building is Done "¯\_(ツ)_/¯"
-
 assembly: $(SRC) $(INCLUDE)
 	@echo Assembling $(SRC) with Intel Syntax and $(CC)
 	@$(CC) $(CFLAGS)$(MARCH) -S $(SRC) $(ADD) -Iinclude
 	@$(MOVE)
 	@echo Assembling is Done "¯\_(ツ)_/¯"
 
-assembly_32: $(SRC)
-	@echo Assembling $(SRC) with Intel Syntax and $(CC32)
-	@$(CC32) $(CFLAGS)$(MARHC32) -S $(SRC) $(ADD) -Iinclude/
-	@$(MOVE)
-	@echo Assembling is Done "¯\_(ツ)_/¯"
-
 analyze:
-	$(ANLZ) $(AFLAGS)64 $(SRC) $(ADD) -Iinclude/ -Iinclude/src
-
-analyze_32:
-	$(ANLZ) $(AFLAGS)32 $(SRC) $(ADD) -Iinclude/ -Iinclude/src
+	$(ANLZ) $(AFLAGS) $(SRC) $(ADD) -Iinclude/ -Iinclude/src
 
 debug: $(EXEC)
 	$(DBG) $(EXEC)
